@@ -104,6 +104,11 @@ a{text-decoration:none;color:inherit}
   gap:70px;
   align-items:center;
   position:relative;
+  background:
+    linear-gradient(90deg,rgba(245,239,230,.94) 0%,rgba(245,239,230,.76) 42%,rgba(245,239,230,.18) 100%),
+    url("img_hero.png");
+  background-size:cover;
+  background-position:center right;
 }
 
 .hero::before{
@@ -111,7 +116,7 @@ a{text-decoration:none;color:inherit}
   position:absolute;
   inset:0;
   background:
-    radial-gradient(circle at 75% 22%,rgba(216,194,164,.45),transparent 35%),
+    radial-gradient(circle at 75% 22%,rgba(216,194,164,.35),transparent 35%),
     radial-gradient(circle at 20% 90%,rgba(255,255,255,.75),transparent 32%);
   pointer-events:none;
 }
@@ -170,8 +175,8 @@ h1{
   border-radius:44px;
   overflow:hidden;
   background:
-    linear-gradient(to bottom,rgba(255,255,255,.08),rgba(0,0,0,.28)),
-    url("https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1400&q=90");
+    linear-gradient(to bottom,rgba(255,255,255,.05),rgba(0,0,0,.22)),
+    url("img_hero.png");
   background-size:cover;
   background-position:center;
   border:12px solid rgba(255,255,255,.8);
@@ -674,6 +679,7 @@ footer{
   .hero{
     padding:125px 5% 45px;
     gap:34px;
+    background-position:center;
   }
   h1{
     font-size:43px;
@@ -829,14 +835,14 @@ footer{
 <section class="before-after-section" id="resultados">
   <div class="section-title reveal">
     <span class="tag">Antes y después interactivo</span>
-    <h2>Resultados de labios con acabado elegante.</h2>
-    <p>Arrastra la barra para comparar el antes y el después. Sustituye las imágenes por fotografías reales de la doctora.</p>
+    <h2>Armonización facial con acabado elegante.</h2>
+    <p>Arrastra la barra para comparar el antes y el después de una armonización facial.</p>
   </div>
 
   <div class="compare-wrapper">
     <div class="compare reveal" id="compareBox">
-      <img src="https://images.unsplash.com/photo-1608253178038-1c75461c0e58?auto=format&fit=crop&w=1200&q=90" alt="Antes labios">
-      <img class="after" id="afterImage" src="https://images.unsplash.com/photo-1598300188904-6287d52746ad?auto=format&fit=crop&w=1200&q=90" alt="Después labios">
+      <img src="fotoantes_arm.png" alt="Antes armonización facial">
+      <img class="after" id="afterImage" src="fotodespues_arm.png" alt="Después armonización facial">
       <span class="compare-label before">Antes</span>
       <span class="compare-label after">Después</span>
       <div class="slider-line" id="sliderLine"></div>
@@ -845,9 +851,9 @@ footer{
     </div>
 
     <div class="compare-copy reveal">
-      <h3>Labios definidos, hidratados y proporcionados.</h3>
+      <h3>Equilibrio, proporción y naturalidad.</h3>
       <p>
-        El objetivo no es transformar el rostro, sino mejorar la forma, hidratación y simetría del labio de manera sutil y médica.
+        La armonización facial permite mejorar la estructura del rostro, suavizar signos de cansancio y potenciar la belleza natural sin perder identidad.
       </p>
       <a href="#reserva" class="btn secondary">Reservar valoración</a>
     </div>
